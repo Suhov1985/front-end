@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<p> alert(null || 2 || undefine) - Выведет 2 так как это единственное true </p>
+<p> alert(alert(213) || 2 || alert(324)) - 213, 2 Так как сработает внктрениний алерт потом подниметься выше и сработает основной который выведет 2, а последний алерт не сработает.</p>
+<p> alert(13123 && null && 2) - null сработает исключение и если есть хоть один false то выведет его</p>
+<p> alert(alert(1) && alert(2)) - 1 потом undefine</p>
+<p> alert(null || 2 && 3 || 4) - 3</p>
+<p> if (-1 || 0) alert("first") - first</p>
+<p> if (-1 && 0) alert("second") - ничего </p>
+</body>
+</html>
